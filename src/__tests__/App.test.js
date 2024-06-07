@@ -70,6 +70,7 @@ test("deletes the question when the delete button is clicked", async () => {
 
   rerender(<App />);
 
+
   await screen.findByText(/lorem testum 2/g);
 
   expect(screen.queryByText(/lorem testum 1/g)).not.toBeInTheDocument();
